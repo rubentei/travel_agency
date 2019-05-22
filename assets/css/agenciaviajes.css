@@ -1,0 +1,274 @@
+  #D7192D
+  #FCD100
+
+* {box-sizing:border-box}
+
+body {
+    width: 1000px;
+    margin: auto;
+}
+
+h2 {
+  color: white;
+}
+
+.hero {
+    width: 100%;
+    margin: auto;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 1000px;
+  }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:  #D7192D;;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    height: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:   #FCD100;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgb(170, 23, 38);
+    color: white;
+  }
+  
+  /* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color:  #D7192D;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .aircraft {
+    max-width: 1000px;
+    padding-top: 20px;
+}
+.prices {
+  width: 1000px;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.zoompic img {
+  width: 320px;
+}
+.text_box {
+  background-color: #D7192D;
+  margin-top: -5px;
+  padding: 8px 2px 2px 0px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+.text_box a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FCD100;
+}
+.grid-container {
+  display: grid;
+  grid-column-gap: 20px;
+  justify-content: space-around;
+  column-width: 33%;
+}
+
+.grid1 {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+.grid2 {
+  grid-column: 1/1;
+  grid-row: 2/2;
+}
+.grid3 {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+.grid4 {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+.grid5 {
+  grid-column: 3/3;
+  grid-row: 1/1;
+}
+.grid6 {
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+.a350 {
+  width: 1000px;
+  margin-top: 50px;
+  position: relative;
+}
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  min-width: 100%;
+  min-height: 100%;
+}
+/* Add some content at the bottom of the video/page */
+.content_video {
+  position: absolute;
+  bottom: 5px;
+
+  width: 960px;
+  background: rgba(0, 0, 0, 0.233);
+  color: #f1f1f1;
+  padding: 20px;
+}
+
+#resume {
+  display: none;
+}
+
+.footer {
+  background-color: #D7192D;
+  margin-top: 20px;
+  display: grid;
+  justify-content: space-around;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.form {
+  grid-column: 1/1;
+  margin-left: 60px;
+}
+
+.butn {
+  margin: 20px;
+  bottom: 0px;
+  background: #D7192D;
+  background-image: -webkit-linear-gradient(top, #D7192D, #A0192D);
+  background-image: -moz-linear-gradient(top, #D7192D, #A0192D);
+  background-image: -ms-linear-gradient(top, #D7192D, #A0192D);
+  background-image: -o-linear-gradient(top, #D7192D, #A0192D);
+  background-image: linear-gradient(to bottom, #D7192D, #A0192D);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 3px 2px 3px #666666;
+  -moz-box-shadow: 3px 2px 3px #666666;
+  box-shadow: 3px 2px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+.butn:hover {
+  background: #D7192D;
+  text-decoration: none;
+}
+
+.contact {
+  grid-column: 2/2;
+  margin: 30px 0;
+}
+
+.contact p{
+  margin-top: 40px;
+}
+

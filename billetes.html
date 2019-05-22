@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBERIA</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/agenciaviajes.css">
+</head>
+
+<body>
+    <header id="home">
+        <div class="hero">
+            <img src="assets/img/iberia_color_explosion.jpg" alt="iberia_color_explosion">
+        </div>
+        <!--.hero-->
+        <div id="navbar">
+            <nav class="topnav">
+                <a class="logo" href="#">
+                    <img src="assets/img/logo-iberia.svg" alt="logo">
+                </a>
+                <!--.logo-->
+                <a href="agenciaviajes.html">Home</a>
+                <a href="agenciaviajes.html/#prices">Price</a>
+                <a href="#about">About</a>
+                <a class="active" href="billetes.html">Billetes</a>
+            </nav>
+            <!--.topnav-->
+        </div>
+        <!--#navbar-->
+        <div class="carousel">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="assets/img/herobanner_1precio_usa_060519_768.jpg" style="width:100%">
+                    <div class="text">Fly to USA</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/img/hero_canary.jpg" style="width:100%">
+                    <div class="text">Fly to Canary Island</div>
+                </div>
+
+                <!-- <div class="mySlides fade">
+                    <img src="img3.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div> -->
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div><!-- The dots/circles -->
+        </div>
+        <!--.carousel-->
+    </header>
+
+    <main>
+        <div class="tickets">
+            <div class="form_tickets">
+                <form action="">
+                    <label for="name">Nombre:</label>
+                    <input id="passenger_name" type="text">
+                    <label for="surname1">Primer apellido:</label>
+                    <input id="passenger_surname1" type="text">
+                    <label for="surname2">Segundo apellido:</label>
+                    <input id="passenger_surname2" type="text">
+
+                    <label for="depart">Ida</label>
+                    <select id="depart" name="depart">
+                        <option value="Madrid">Madrid</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Sevilla">Sevilla</option>
+                        <option value="Valencia">Valencia</option>
+                    </select>
+
+                    <label for="arrival">Llegada</label>
+                    <select id="arrival" name="arrival">
+                        <option value="Londres">Londres</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Miami">Miami</option>
+                    </select>
+
+                    <label for="depart_date">Fecha de ida:</label>
+                    <input id="depart_date" type="date">
+
+                    <label for="arrival_date">Fecha de vuelta:</label>
+                    <input id="arrival_date" type="date">
+
+                    <label for="seat_class">Escoge el tipo de billete:</label>
+                    <select id="seat_class" name="seat_class">
+                        <option value="Bussines">Bussines</option>
+                        <option value="Tourist">Turista</option>
+                    </select>
+
+                    
+                </form>
+                <button onclick="new_resume()">Enviar</button>
+            </div>
+            <!--.form_tickets-->
+            <div id="resume" class="resume">
+                <p id="resume_depart"></p>
+                <p id="resume_arrival"></p>
+                <p id="resume_date_depart"></p>
+                <p id="resume_date_arrival"></p>
+                <p id="resume_ticket_class"></p>
+                <p id="resume_seat_row"></p>
+                <p id="resume_seat_letter"></p>
+                <p id="resume_total_price"></p>
+            </div><!--.resume-->
+            <!--.resume-->
+        </div>
+        <!--.tickets-->
+    </main>
+
+    <footer id="about">
+        <div class="footer">
+            <div class="form">
+                <form action="">
+                    <h2>Envíanos tus datos<br> y te haremos la <span>mejor oferta:</span></h2>
+                    <label for="name">Nombre:</label><br>
+                    <input id="name" type="text" placeholder="ej: Juan"><br>
+                    <label for="surname">Apellidos:</label><br>
+                    <input id="surname" type="text" placeholder="ej: García García"><br>
+                    <label for="email">e-mail:</label><br>
+                    <input id="email" type="email" placeholder="email@email.com"><br>
+                    
+                </form>
+                <button onclick="toObject()" class="butn">Enviar</button>
+            </div>
+            <!--.form-->
+            <div class="contact">
+                <img src="assets/img/logo-iberia.svg" alt="logo-iberia">
+                <p>Telf: +34666666666</p>
+                <p>email: iberia@iberiamola.es</p>
+                <p>Direción: Aeropuerto Adolfo Suárez - Barajas</p>
+            </div>
+            <!--.contact-->
+        </div>
+        <!--.footer-->
+    </footer>
+    <script src="assets/js/agenciaviajes.js"></script>
+</body>
+<!--.body-->
+
+</html>
